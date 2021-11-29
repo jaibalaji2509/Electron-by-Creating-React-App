@@ -36,3 +36,129 @@
     transform: rotate(360deg);
   }
 }
+
+
+.Optsel{
+  width: 200px;
+  margin: 10em;
+}
+.letter{
+ color: pink;
+  font-size: 20px;
+}
+.letter2{
+  background: linear-gradient(to bottom, rgb(202, 185, 185) 0, rgb(202, 185, 185) 50%, #959fb4 51%, #959fb4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 20px;
+}
+.letter1{
+ color: chocolate;
+  font-size: 20px;
+}
+
+.CONT{
+  background-color: pink;
+  width: 300px;
+  height: 150px;
+  margin-top: -1.3em;
+  }
+
+  .jiname{
+    width: 300px;
+  }
+
+
+  input[type="text"] + label,
+input[type="number"] + label,
+input[type="password"] + label {
+  position: absolute;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #1f1f1f;
+  left: 15px;
+  top: 14px;
+  z-index: 2;
+  cursor: text;
+  transform-origin: top left;
+  transition: all 0.1s;
+}
+
+input[type="text"]:focus + label,
+input[type="text"]:not([value=""]) + label,
+input[type="number"]:focus + label,
+input[type="number"]:not([value=""]) + label,
+input[type="password"]:focus + label,
+input[type="password"]:not([value=""]) + label {
+  transform: translateY(-10px) scale(0.7);
+}
+
+.Cglas{
+  display: none;
+}
+
+.sowkal:hover .Cglas{
+  display: block;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.animated {
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding-top:95px;
+  margin-bottom:60px;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+     opacity: 0;
+     -webkit-transform: translateX(-20px);
+  }
+  100% {
+     opacity: 1;
+     -webkit-transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+     opacity: 0;
+     transform: translateX(-20px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateX(0);
+  }
+}
+
+.fadeInLeft {
+-webkit-animation-name: fadeInLeft;
+animation-name: fadeInLeft;
+} 
